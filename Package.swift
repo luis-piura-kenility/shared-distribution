@@ -22,8 +22,8 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(
             name: "shared",
-            url: "https://github.com/luis-piura-kenility/shared-distribution/releases/download/0.0.2/shared.xcframework.zip",
-            checksum: "49ce5ad700c61aeb31b1f4c5e6d79980a2bbb4342a9dfcb4601e13cc79581962"
+            url: "https://github.com/luis-piura-kenility/shared-distribution/releases/download/0.0.3/shared.xcframework.zip",
+            checksum: "832db356ea9f0de7f2f5d87df57561ef4af37a629a96feb4b1032cac05f79bb3"
         ),
         .target(
             name: "SharedTargets",
