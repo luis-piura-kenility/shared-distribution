@@ -22,8 +22,8 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(
             name: "shared",
-            url: "https://github.com/Truvideo/truvideo-sdk-ios-core/releases/download/0.0.18/shared.xcframework.zip",
-            checksum: "4445be410f9722f25088b0ff1b43af28788a19a286ab18b51e856ac25d92b6a6"
+            url: "https://github.com/luis-piura-kenility/shared-distribution/releases/download/0.0.2/shared.xcframework.zip",
+            checksum: "49ce5ad700c61aeb31b1f4c5e6d79980a2bbb4342a9dfcb4601e13cc79581962"
         ),
         .target(
             name: "SharedTargets",
