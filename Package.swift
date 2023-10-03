@@ -3,15 +3,13 @@
 
 import PackageDescription
 
-let packageVersion = "0.0.18"
-
 let package = Package(
-    name: "shared",
+    name: "TruvideoSdk",
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "shared",
-            targets: ["SharedTargets"]),
+            name: "TruvideoSdk",
+            targets: ["TruvideoSdkTargets"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -21,14 +19,14 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(
-            name: "shared",
-            url: "https://github.com/luis-piura-kenility/shared-distribution/releases/download/0.0.3/shared.xcframework.zip",
-            checksum: "832db356ea9f0de7f2f5d87df57561ef4af37a629a96feb4b1032cac05f79bb3"
+            name: "TruvideoSdk",
+            url: "https://github.com/luis-piura-kenility/shared-distribution/releases/download/0.0.4/TruvideoSdk.xcframework.zip",
+            checksum: "824fd2e52fe820961890dd3d33806cfac97cf06f2c3aca6a0ec081323e39269c"
         ),
         .target(
-            name: "SharedTargets",
+            name: "TruvideoSdkTargets",
             dependencies: [
-                .target(name: "shared")
+                .target(name: "TruvideoSdk")
             ],
             path: "Sources"
         )
